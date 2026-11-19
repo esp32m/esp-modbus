@@ -133,7 +133,7 @@ menu "Modbus configuration"
         int "Serial master deletion timeout (ms)"
         depends on FMB_COMM_MODE_RTU_EN || FMB_COMM_MODE_ASCII_EN
         range 100 200000
-        default FMB_MASTER_MAX_API_BLOCKING_TIME_MS
+        default 2000
         help
                 Total time to acquire the controller request semaphore and wait
                 for serial master workers and supported timer callbacks to finish.
